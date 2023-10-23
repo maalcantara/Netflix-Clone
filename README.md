@@ -1,6 +1,6 @@
 # Netflix Clone 🎬
 
-![Netflix Clone](src\assets\netflixclone-print.png)
+![Netflix Clone](https://github.com/maalcantara/Netflix-Clone/blob/main/src/assets/netflixclone-print.png)
 
 ## Overview 🍿
 
