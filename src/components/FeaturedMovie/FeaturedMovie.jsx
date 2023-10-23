@@ -1,7 +1,7 @@
 import React from "react";
 import "./FeaturedMovie.css";
 
-export default ({ item }) => {
+const FeaturedMovie = ({ item }) => {
   console.log(item);
 
   let firstDate = new Date(item.first_air_date);
@@ -14,7 +14,6 @@ export default ({ item }) => {
   if (description && typeof description === "string" && description.length > 200) {
     description = description.substring(0, 200) + "...";
   }
-
 
   return (
     <section
@@ -53,3 +52,5 @@ export default ({ item }) => {
     </section>
   );
 };
+
+export default FeaturedMovie;

@@ -2,7 +2,7 @@ import React, { useState }from "react";
 import './MovieRow.css';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
-export default ({ title, items }) => {
+const MovieRow = ({ title, items }) => {
   const [scrollX, setScrollX] = useState(0);
 
   const handleLeftArrow = () => {
@@ -45,3 +45,5 @@ export default ({ title, items }) => {
     </div>
   );
 };
+
+export default MovieRow;
