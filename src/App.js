@@ -5,7 +5,7 @@ import MovieRow from "./components/MovieRow/MovieRow";
 import FeaturedMovie from "./components/FeaturedMovie/FeaturedMovie";
 import Header from "./components/Header/Header";
 
-export default () => {
+const App = () => {
   const [movieList, setMovieList] = useState([]);
   const [featuredData, setFeaturedData] = useState(null);
   const [blackHeader, setBlackHeader] = useState(false);
@@ -54,7 +54,7 @@ export default () => {
         Image rights for Netflix®
         <br />
         Data from API
-        <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">
+        <a href="https://www.themoviedb.org/" target="_blank" rel="noreferrer">
           TheMovieDB
         </a>
         <br />
@@ -63,16 +63,25 @@ export default () => {
           ♡
         </span>
         by
-        <a href="https://github.com/maalcantara" target="_blank" rel="noopener">
+        <a
+          href="https://github.com/maalcantara"
+          target="_blank"
+          rel="noreferrer"
+        >
           maalcantara
         </a>
       </footer>
 
       {movieList <= 0 && (
-        <div className="loading" alt="loading">
-          <img src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif" />
+        <div className="loading">
+          <img
+            src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif"
+            alt="loading"
+          />
         </div>
       )}
     </div>
   );
 };
+
+export default App;
